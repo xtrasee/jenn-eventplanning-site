@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+}
+
+.main-img{
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.gallery{
+    padding: 1.25rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 20px;
+    width: auto;
+}
+
+.img-card{
+    height: 100px;
+    background-color: pink;
+}
