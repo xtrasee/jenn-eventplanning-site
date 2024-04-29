@@ -1,7 +1,29 @@
+:root{
+    --main-background: #FFF8DC;
+    --main-font: 'Raleway';
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--main-background);
+    font: var(--main-font);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway.ttf');
+}
+
+@font-face {
+    font-family: 'Genty';
+    src: url('/fonts/Genty.ttf');
+}
+
+@font-face {
+    font-family: 'Luckybones';
+    src: url('/fonts/Luckybones.ttf');
 }
 
 header{
