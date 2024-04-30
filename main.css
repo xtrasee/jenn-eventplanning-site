@@ -1,16 +1,26 @@
 :root{
     --main-background: #FFF8DC;
     --main-font: 'Raleway';
+    --mainheader-font: 'Genty';
+    --header-font: 'TanMeringue';
+    --btn-color: #F5AC0B;
+    --pink-color: #F5ACC8;
+    --red-color: #FF5757;
+    --purple-color: #DAB6FF;
+    --light-orange-color: #FFCF73;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--main-background);
-    font: var(--main-font);
 }
 
+html, body{
+    background-color: var(--main-background);
+}
+
+/* font imports */
 @font-face {
     font-family: 'Raleway';
     src: url('/fonts/Raleway.ttf');
@@ -26,27 +36,239 @@
     src: url('/fonts/Luckybones.ttf');
 }
 
-header{
-    text-align: center;
+@font-face {
+    font-family: 'TanMeringue';
+    src: url('/fonts/TanMeringue.ttf');
 }
 
-.main-img{
-    height: 250px;
-    width: 250px;
-    background-color: pink;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-}
+@media screen and (min-width: 300px){
 
-.gallery{
-    padding: 1.25rem 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    grid-gap: 20px;
-    width: auto;
-}
+    /* universal */
 
-.img-card{
-    height: 100px;
-    background-color: pink;
+    header{
+        text-align: center;
+    }
+
+    h1{
+        font-family: var(--main-font);
+        font-size: 1rem;
+    }
+
+    h2{
+        font-family: var(--header-font);
+        color: var(--pink-color);
+        text-shadow: -0.75px -0.75px 0 #000,  
+                  0.75px -0.75px 0 #000,
+                 -0.75px  0.75px 0 #000,
+                  0.75px  0.75px 0 #000; /* Apply the black outline */
+        font-size: 0.75rem;
+    }
+
+    h3{
+        font-family: var(--mainheader-font);
+        letter-spacing: 0.10rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .container-1 button{
+        background-color: var(--btn-color);
+        padding: 0.35rem 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: #422800 4px 3px 0px 0px;
+        border: none;
+        font-family: var(--main-font);
+    }
+
+    .logo{
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .location{
+        font-family: 'Luckybones';
+        font-size: 0.75rem;
+        margin: 1.5rem 0rem;
+    }
+    
+    /* SECTION 1 */
+    .container-1{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        background-color: var(--pink-color);
+        padding: 1rem 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .main-img, .profile-pic{
+        height: 160px;
+        width: 130px;
+        background-color: pink;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        margin: 0.50rem;
+        border: 1px solid black;
+    }
+
+    .container-1-right-contents{
+        width: 50%;
+        font-family: var(--main-font);
+        margin-top: 0.55em;
+    }
+
+    .container-1-right-contents p, button{
+        font-size: 0.70rem;
+        margin-top: 0.45rem;
+    }
+    
+    /* GALLERY */
+
+    .gallery{
+        padding: 1.25rem 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+        grid-gap: 20px;
+        width: auto;
+    }
+
+    .img-card{
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+    }
+
+    .gallery-btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-btn button{
+        font-size: 1rem;
+        transform: skew(-20deg);
+        padding: 1.75rem 3rem;
+        background-color: var(--btn-color);
+        box-shadow: #422800 4px 5px 0px 0px;
+        border: none;
+        border-radius: 75% 40% 75% 40%;
+    }
+
+    .gallery-btn span {
+        transform: skew(20deg); /* Counteract the skew of the button */
+    }
+
+    /* PRICING SECTION */
+    .pricing-container{
+        background-color: var(--pink-color);
+        padding-bottom: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-h2{
+        text-align: center;
+        font-size: 1.35rem;
+        border-top: 1px solid black;
+        padding-top: 1rem;
+
+        /* to delete */
+        margin-bottom: 3rem;
+    }
+
+    .pricing-container h3{
+        text-align: center;
+    }
+
+    .planning-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 3rem;
+        height: auto;
+    }
+
+    .planning, .coordination{
+        width: 50%;
+        padding:1rem;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    .planning{
+        background-color: var(--purple-color);
+        border-right: 1px solid black;
+        margin-right: 1rem;
+        border-radius: 0 45% 45% 0;
+    }
+
+    .coordination{
+        background-color: var(--light-orange-color);
+        border-left: 1px solid black;
+        border-radius: 45% 0 0 45%;
+        margin-left: 1rem;
+    }
+
+    .planning h3{
+        margin-right: 0.75rem;
+    }
+
+    .pricing-btn, .contact-btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .pricing-btn button, .contact-btn button{
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        padding: 0.35rem 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /* contact img */
+    .contact-us{
+        text-align: center;
+        font-size: 2rem;
+        color: var(--main-background);
+        margin-bottom: 1rem;
+        text-shadow: -0.75px -0.75px 0 #000,  
+                  0.75px -0.75px 0 #000,
+                 -0.75px  0.75px 0 #000,
+                  0.75px  0.75px 0 #000; /* Apply the black outline */
+    }
+
+    /* ABOUT SECTION */
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content{
+        background-color: var(--pink-color);
+        padding: 0.5rem;
+    }
+
+    .about-content p{
+        font-family: var(--main-font);
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+
+    .about h3{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
 }
