@@ -81,10 +81,11 @@ html, body{
         box-shadow: #422800 4px 3px 0px 0px;
         border: none;
         font-family: var(--main-font);
+        margin-top: 0.75rem;
     }
 
     .logo{
-        margin-top: 0.5rem;
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
     
@@ -123,8 +124,13 @@ html, body{
     }
 
     .container-1-right-contents p, button{
-        font-size: 0.70rem;
-        margin-top: 0.45rem;
+        font-size: 0.60rem;
+        margin-top: 0.6rem;
+    }
+
+    .container-1 h2{
+        font-size: 0.8rem;
+        letter-spacing: 0.09rem;
     }
     
     /* GALLERY */
@@ -172,8 +178,8 @@ html, body{
 
     .pricing-h2{
         text-align: center;
-        font-size: 1.35rem;
-        border-top: 1px solid black;
+        font-size: 1.15rem;
+        letter-spacing: 0.15rem;
         padding-top: 1rem;
 
         /* to delete */
@@ -222,15 +228,14 @@ html, body{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+        cursor: pointer;
     }
 
-    .pricing-btn button, .contact-btn button{
+    .pricing-btn button{
         color: white;
         background-color: black;
-        padding: 1rem;
-        padding: 0.35rem 0.5rem;
+        padding: 0.25rem;
         border-radius: 10px;
-        cursor: pointer;
     }
 
     /* contact img */
@@ -254,14 +259,14 @@ html, body{
 
     .about-content{
         background-color: var(--pink-color);
-        padding: 0.5rem;
+        padding: 0.75rem 0rem;
     }
 
     .about-content p{
         font-family: var(--main-font);
-        font-size: 0.75rem;
-        padding: 0.5rem;
-        margin-top: 0.5rem;
+        font-size: 0.60rem;
+        letter-spacing: 0.05rem;
+        margin-top: 0.75rem;
         width: 75%;
         margin-left: 12.5%;
     }
@@ -271,4 +276,10 @@ html, body{
         margin-bottom: 0.5rem;
     }
 
+    .contact-btn button{
+        color: white;
+        background-color: black;
+        padding: 0rem 1rem;
+        border-radius: 6px;
+    }
 }
