@@ -8,12 +8,14 @@
     --red-color: #FF5757;
     --purple-color: #DAB6FF;
     --light-orange-color: #FFCF73;
+    --mobile-fontsize: 0.75rem;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html, body{
@@ -73,7 +75,7 @@ html, body{
         text-decoration: none;
     }
 
-    .container-1 button{
+    .container-1 button, .btn{
         background-color: var(--btn-color);
         padding: 0.35rem 0.5rem;
         border-radius: 10px;
@@ -181,9 +183,6 @@ html, body{
         font-size: 1.15rem;
         letter-spacing: 0.15rem;
         padding-top: 1rem;
-
-        /* to delete */
-        margin-bottom: 3rem;
     }
 
     .pricing-container h3{
@@ -281,5 +280,87 @@ html, body{
         background-color: black;
         padding: 0rem 1rem;
         border-radius: 6px;
+    }
+
+    /* packages and pricing section */
+    .curved-letters{
+        font-family: var(--mainheader-font);
+        font-size: 2rem;
+        letter-spacing:0.1rem
+    }
+    /* adjusting some curved headers */
+    .sm{
+        font-size: 2.6rem;
+    }
+
+    .co{
+        font-size: 2.15rem;
+    }
+
+    .lo{
+        font-size: 1.8rem;
+    }
+
+    .de{
+        font-size: 2.4rem;
+    }
+
+    .partial-planning{
+        background-color: var(--pink-color);
+    }
+
+    .packages p, .partial-planning p, .day-of-cord p, .other-services p{
+        width: 75%;
+        margin-left: 12.5%;
+        font-family: var(--main-font);
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .packages h4, .partial-planning h4, .day-of-cord h4, .other-services h4, .events h4{
+        font-family: 'Luckybones';
+        text-align: center;
+        font-size: var(--mobile-fontsize);
+        margin: 1rem 0rem;
+    }
+
+    .packages ul, .partial-planning ul, .day-of-cord ul, .other-services ul{
+        font-family: var(--main-font);
+        text-align: center;
+        font-size: var(--mobile-fontsize);
+        margin-bottom: 0.25rem;
+    }
+
+    .btn{
+        padding: 0.25rem 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .center-btn{
+        text-align: center;
+    }
+
+    svg{
+        border: 1px solid red;
+    }
+
+    .other-services h2{
+        text-align: center;
+        font-size: 1.15rem;
+        color: var(--main-background);
+        padding-top: 1rem;
+    }
+
+    .other-services{
+        background-color: var(--pink-color);
+    }
+
+    .events{
+        background-color: var(--main-background);
+    }
+
+    .events h4{
+        margin-top: 0rem;
+        font-size: 0.60rem;
     }
 }
