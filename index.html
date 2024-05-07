@@ -343,28 +343,32 @@
                 <label for="number">Phone Number *</label>
                 <input type="tel" id="phone" name="phone" placeholder="E.g. 555 123 4567" class="input" required>
                 <label for="cb">Preferred Method of Communication</label>
-                <input id="cb" type="checkbox" style="float: left; margin-top: 1.25rem;">
-                <div style="margin-left: 25px;">
-                    Text
-                </div>
-                <input id="cb" type="checkbox" style="float: left;">
-                <div style="margin-left: 25px;">
-                    Email
-                </div>
-                <input id="cb" type="checkbox" style="float: left;">
-                <div style="margin-left: 25px;">
-                    Phone Call
+                <div class="checkbox">
+                    <input id="cb" type="checkbox" style="margin-bottom: 1.25rem;">
+                    <div style="margin-left: 25px;">
+                        Text
+                    </div>
+                    <input id="cb" type="checkbox">
+                    <div style="margin-left: 25px;">
+                        Email
+                    </div>
+                    <input id="cb" type="checkbox">
+                    <div style="margin-left: 25px;">
+                        Phone Call
+                    </div>
                 </div>
                 <label for="date">Event Date *</label>
                 <input type="date" name="date" id="event-date" class="input" required>
                 <label for="cb">Is this date flexible</label>
-                <input id="cb" type="checkbox" style="float: left; margin-top: 1.25rem;">
-                <div style="margin-left: 25px;">
-                    Yes
-                </div>
-                <input id="cb" type="checkbox" style="float: left;">
-                <div style="margin-left: 25px;">
-                    No
+                <div class="checkbox">
+                    <input id="cb" type="checkbox" style="margin-top: 1.25rem;">
+                    <div style="margin-left: 25px;">
+                        Yes
+                    </div>
+                    <input id="cb" type="checkbox">
+                    <div style="margin-left: 25px;">
+                        No
+                    </div>
                 </div>
                 <label for="address">Address for Event (if Known)</label>
                 <input type="text" id="address" name="address" placeholder="E.g. 123 Wed St. San Diego, CA 92111" class="input">
@@ -386,8 +390,15 @@
                 </select>
                 <label for="social">Social Media Accounts (if you have it)!</label>
                 <input type="text" name="social" id="social" placeholder="@" class="input">
+                <label for="info">I'd love to hear more!</label>
+                <textarea name="info" id="info" cols="20" rows="5" placeholder="Please include any other event details here!"></textarea>
+                <div class="form-btn">
+                    <button class="form-btn">Submit</button>
+                </div>
             </form>
         </div>
+
+        <p class="logo" style="text-align: center;">*insert logo here*</p>
 
     </main>
 </body>
