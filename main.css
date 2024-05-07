@@ -302,7 +302,11 @@ html, body{
     }
 
     .de{
-        font-size: 2.4rem;
+        font-size: 2.23rem;
+    }
+
+    .la{
+        font-size: 1.95rem;
     }
 
     .partial-planning{
