@@ -43,7 +43,7 @@
                     Are you planning a local or destination wedding, elopement, bridal shower, birthday, bach party or event and don’t know where to start? Look no further, because your Big Day Bestie is here to help!
                 </p>
 
-                <a href="">
+                <a href="#about">
                     <button>Meet the Event Planner</button>
                 </a>
             </div>
@@ -61,7 +61,7 @@
             <div class="img-card"></div>
         </div>
 
-        <a href="">
+        <a href="#gallery">
             <div class="gallery-btn">
                 <button class="gallery-btn">
                     <span>Visit Gallery</span>
@@ -83,7 +83,7 @@
                 </div>
             </div>
 
-            <a href="">
+            <a href="#pricing">
                 <div class="pricing-btn">
                     <button>
                         See Pricing + Packages Here
@@ -98,7 +98,7 @@
 
         <p class="logo" style="text-align: center;">*insert logo here*</p>
         
-        <div class="about">
+        <div class="about" id="about">
             <div class="profile-pic"></div>
             <h3>Hi, i'm Jenn!</h3>
             <div class="about-content">
@@ -124,7 +124,7 @@
                     help where I can. Let’s grab a coffee and discuss
                     your perfect day!</p>
     
-                    <a href="">
+                    <a href="#contact-form">
                         <div class="contact-btn">
                             <button>
                                 Get In Touch!
@@ -136,7 +136,7 @@
 
         <p class="logo" style="text-align: center;">*insert logo here*</p>
 
-        <div class="packages">
+        <div class="packages" id="pricing">
             <h2 class="pricing-h2">PACKAGES & PRICING</h2>
 
             <svg class="curved" width="600" height="80" viewBox="15 130 875 80">
@@ -171,7 +171,7 @@
             </ul>
 
             <div class="center-btn">
-                <a href="">
+                <a href="#contact-form">
                     <button class="btn">Inquire Here</button>
                 </a>
             </div>
@@ -210,7 +210,7 @@
             </ul>
 
             <div class="center-btn">
-                <a href="">
+                <a href="#contact-form">
                     <button class="btn">Inquire Here</button>
                 </a>
             </div>
@@ -247,7 +247,7 @@
             </ul>
 
             <div class="center-btn">
-                <a href="">
+                <a href="#contact-form">
                     <button class="btn">Inquire Here</button>
                 </a>
             </div>
@@ -302,7 +302,7 @@
             </ul>
 
             <div class="center-btn">
-                <a href="">
+                <a href="#contact-form">
                     <button class="btn" style="margin-bottom: 1rem;">Inquire Here</button>
                 </a>
             </div>
@@ -326,7 +326,7 @@
 
         <p class="logo" style="text-align: center;">*insert logo here*</p>
 
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             <h2>GALLERY</h2>
 
             <!-- include swiper.js -->
@@ -334,7 +334,7 @@
 
         <p class="logo" style="text-align: center;">*insert logo here*</p>
 
-        <div class="form">
+        <div class="form" id="contact-form">
             <form action="" id="contactForm">
                 <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" placeholder="Your full name here" class="input" required>
@@ -344,30 +344,30 @@
                 <input type="tel" id="phone" name="phone" placeholder="E.g. 555 123 4567" class="input" required>
                 <label for="cb">Preferred Method of Communication</label>
                 <div class="checkbox">
-                    <input id="cb" type="checkbox" style="margin-bottom: 1.25rem;">
-                    <div style="margin-left: 25px;">
-                        Text
+                    <div style="margin-top: 0.5rem;">
+                        <input id="cb" type="checkbox">
+                        <p>Text</p>
                     </div>
-                    <input id="cb" type="checkbox">
-                    <div style="margin-left: 25px;">
-                        Email
+                    <div>
+                        <input id="cb" type="checkbox">
+                        <p>Email</p>
                     </div>
-                    <input id="cb" type="checkbox">
-                    <div style="margin-left: 25px;">
-                        Phone Call
+                    <div>
+                        <input id="cb" type="checkbox">
+                        <p>Phone Call</p>
                     </div>
                 </div>
                 <label for="date">Event Date *</label>
                 <input type="date" name="date" id="event-date" class="input" required>
                 <label for="cb">Is this date flexible</label>
                 <div class="checkbox">
-                    <input id="cb" type="checkbox" style="margin-top: 1.25rem;">
-                    <div style="margin-left: 25px;">
-                        Yes
+                    <div style="margin-top: 0.5rem;">
+                        <input id="cb" type="checkbox">
+                        <p>Yes</p>
                     </div>
-                    <input id="cb" type="checkbox">
-                    <div style="margin-left: 25px;">
-                        No
+                    <div>
+                        <input id="cb" type="checkbox">
+                        <p>No</p>
                     </div>
                 </div>
                 <label for="address">Address for Event (if Known)</label>
@@ -399,6 +399,21 @@
         </div>
 
         <p class="logo" style="text-align: center;">*insert logo here*</p>
+
+        <div class="menu">
+            <h2>ABOUT</h2>
+            <h2>PACKAGES & PRICING</h2>
+            <h2>GALLERY</h2>
+            <h2>CONTACT US</h2>
+
+            <a href="#contact-form">
+                <div class="final-btn">
+                    <button class="final-btn">
+                        <span>Inquire Here</span>
+                    </button>
+                </div>
+            </a>
+        </div>
 
     </main>
 </body>

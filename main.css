@@ -151,13 +151,13 @@ html, body{
         background-color: pink;
     }
 
-    .gallery-btn{
+    .gallery-btn, .final-btn{
         display: flex;
         justify-content: center;
         margin-bottom: 2rem;
     }
 
-    .gallery-btn button{
+    .gallery-btn button, .final-btn button{
         font-size: 1rem;
         transform: skew(-20deg);
         padding: 1.75rem 3rem;
@@ -223,11 +223,12 @@ html, body{
         margin-right: 0.75rem;
     }
 
-    .pricing-btn, .contact-btn{
+    .pricing-btn, .contact-btn, .form-btn{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
         cursor: pointer;
+        font-family: var(--main-font);
     }
 
     .pricing-btn button{
@@ -275,7 +276,7 @@ html, body{
         margin-bottom: 0.5rem;
     }
 
-    .contact-btn button{
+    .contact-btn button, .form-btn button{
         color: white;
         background-color: black;
         padding: 0rem 1rem;
@@ -392,5 +393,37 @@ html, body{
     label{
         margin-bottom: 0.20rem;
     }
+
+    .checkbox div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.25rem;
+    }
     
+    .checkbox div input[type="checkbox"] {
+        margin-right: 0.5rem;
+    }
+
+    .checkbox p {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-btn button{
+        padding: 0rem 1.75rem;
+    }
+
+    /* final page */
+    .menu{
+        text-align: center;
+    }
+
+    .menu h2{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .final-btn{
+        margin-top: 2rem;
+
+    }
 }
