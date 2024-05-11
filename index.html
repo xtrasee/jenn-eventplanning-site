@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Day Bestie</title>
     <link rel="stylesheet" href="main.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 
 <!-- 
@@ -49,7 +53,7 @@
             </div>
         </div>
 
-        <div class="gallery">
+        <div class="preview-gallery">
             <!-- code gallery -->
             <div class="img-card"></div>
             <div class="img-card"></div>
@@ -328,8 +332,29 @@
 
         <div class="gallery" id="gallery">
             <h2>GALLERY</h2>
+            <!-- Slider main container -->
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 1</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 2</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 3</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 4</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 5</div></div>
+                </div>
+                <!-- Add navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
 
-            <!-- include swiper.js -->
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 1</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 2</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 3</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 4</div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container">Slide 5</div></div>
+                </div>
+        </div>
         </div>
 
         <p class="logo" style="text-align: center;">*insert logo here*</p>
@@ -415,6 +440,32 @@
             </a>
         </div>
 
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- <script src="script.js"></script> -->
+        <script>
+            var galleryTop = new Swiper('.gallery-top', {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                        loop: true,
+                        loopedSlides: 4
+                });
+                var galleryThumbs = new Swiper('.gallery-thumbs', {
+                spaceBetween: 10,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                touchRatio: 0.2,
+                slideToClickedSlide: true,
+                        loop: true,
+                        loopedSlides: 4
+                });
+                galleryTop.controller.control = galleryThumbs;
+                galleryThumbs.controller.control = galleryTop;
+          </script>
     </main>
 </body>
 </html>

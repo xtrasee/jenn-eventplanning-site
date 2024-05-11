@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 html, body{
@@ -137,7 +137,7 @@ html, body{
     
     /* GALLERY */
 
-    .gallery{
+    .preview-gallery{
         padding: 1.25rem 3rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
@@ -345,10 +345,6 @@ html, body{
         text-align: center;
     }
 
-    svg{
-        border: 1px solid red;
-    }
-
     .other-services h2{
         text-align: center;
         font-size: 1.15rem;
@@ -426,4 +422,41 @@ html, body{
         margin-top: 2rem;
 
     }
+
+    /* test swiper */
+
+    .swiper-container {
+        /* --swiper-navigation-size: 1rem;
+        --swiper-navigation-top-offset: 50%;
+        --swiper-navigation-sides-offset: 1rem;
+        --swiper-navigation-color: var(--pink-color); */
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+    }
+    
+    .swiper-slide-container {
+      text-align: center;
+      background-color: white;
+      height:100%;
+      width: 75%;
+      margin:auto;
+    }
+
+    .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+            width: 20%;
+            height: 100%;
+            opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+    }
+    
 }
