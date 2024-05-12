@@ -15,11 +15,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 html, body{
     background-color: var(--main-background);
+    overflow-x: hidden;
 }
 
 /* font imports */
@@ -75,6 +75,58 @@ html, body{
         text-decoration: none;
     }
 
+    .logo{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* nav */
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #f5acc8fc;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 2rem;
+        color: black;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: var(--main-background);
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        font-size: 2.5rem;
+      }
+
+    .mobile-menu{
+        display: flex;
+        padding-left: 0.5rem;
+        position: fixed;
+    }    
+
     .container-1 button, .btn{
         background-color: var(--btn-color);
         padding: 0.35rem 0.5rem;
@@ -84,11 +136,6 @@ html, body{
         border: none;
         font-family: var(--main-font);
         margin-top: 0.75rem;
-    }
-
-    .logo{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
     }
     
     .location{
@@ -216,7 +263,7 @@ html, body{
         background-color: var(--light-orange-color);
         border-left: 1px solid black;
         border-radius: 45% 0 0 45%;
-        margin-left: 1rem;
+        margin-left: 2.5rem;
     }
 
     .planning h3{
@@ -365,6 +412,52 @@ html, body{
         font-size: 0.60rem;
     }
 
+    /* gallery */
+    .gallery h2{
+        font-size: 1.25rem;
+        letter-spacing: 0.10rem;
+        text-align: center;
+    }
+
+    /* swiper */
+    .swiper-container {
+        --swiper-navigation-size: 2rem;
+        --swiper-navigation-top-offset: 925%;
+        --swiper-navigation-sides-offset: 0.75rem;
+        --swiper-navigation-color: var(--pink-color);
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+    }
+
+    .navigation-container{
+        z-index: -3;
+    }
+    
+    .swiper-slide-container {
+      text-align: center;
+      background-color: white;
+      height:100%;
+      width: 75%;
+      margin:auto;
+    }
+
+    .gallery-thumbs {
+        position: relative;
+        height: 20%;
+        padding: 1rem;
+    }
+
+    .gallery-thumbs .swiper-slide {
+            width: 20%;
+            height: 100%;
+            opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+    }
+
     /* form */
     form{
         display: flex;
@@ -422,41 +515,4 @@ html, body{
         margin-top: 2rem;
 
     }
-
-    /* test swiper */
-
-    .swiper-container {
-        /* --swiper-navigation-size: 1rem;
-        --swiper-navigation-top-offset: 50%;
-        --swiper-navigation-sides-offset: 1rem;
-        --swiper-navigation-color: var(--pink-color); */
-        width: 100%;
-        height: 300px;
-        margin: 20px auto;
-    }
-    
-    .swiper-slide-container {
-      text-align: center;
-      background-color: white;
-      height:100%;
-      width: 75%;
-      margin:auto;
-    }
-
-    .gallery-thumbs {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-    }
-
-    .gallery-thumbs .swiper-slide {
-            width: 20%;
-            height: 100%;
-            opacity: 0.4;
-    }
-
-    .gallery-thumbs .swiper-slide-active {
-            opacity: 1;
-    }
-    
 }
