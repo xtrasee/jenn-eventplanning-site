@@ -381,7 +381,7 @@
         <p class="logo" style="text-align: center;">*insert logo here*</p>
 
         <div class="form" id="contact-form">
-            <form action="" id="contactForm">
+            <form method="post" action="index.php" id="contactForm">
                 <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" placeholder="Your full name here" class="input" required>
                 <label for="email">Email *</label>
@@ -391,15 +391,15 @@
                 <label for="cb">Preferred Method of Communication</label>
                 <div class="checkbox">
                     <div style="margin-top: 0.5rem;">
-                        <input id="cb" type="checkbox">
+                        <input id="cb" type="checkbox" name="comm[]" value="text">
                         <p>Text</p>
                     </div>
                     <div>
-                        <input id="cb" type="checkbox">
+                        <input id="cb" type="checkbox" name="comm[]" value="email">
                         <p>Email</p>
                     </div>
                     <div>
-                        <input id="cb" type="checkbox">
+                        <input id="cb" type="checkbox" name="comm[]" value="phone-call">
                         <p>Phone Call</p>
                     </div>
                 </div>
@@ -408,11 +408,11 @@
                 <label for="cb">Is this date flexible</label>
                 <div class="checkbox">
                     <div style="margin-top: 0.5rem;">
-                        <input id="cb" type="checkbox">
+                        <input id="cb" type="checkbox" name="date[]" value="yes">
                         <p>Yes</p>
                     </div>
                     <div>
-                        <input id="cb" type="checkbox">
+                        <input id="cb" type="checkbox" name="date[]" value="no">
                         <p>No</p>
                     </div>
                 </div>
