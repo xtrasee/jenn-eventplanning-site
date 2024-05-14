@@ -1,11 +1,14 @@
 <?php
-// Include PHPMailer autoload file
-require 'vendor/autoload.php';
 
 // Import necessary classes
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+
+// Include PHPMailer autoload file
+require 'vendor/autoload.php';
+
+$mail = new PHPMailer(true);
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -25,22 +28,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $more_info = $_POST['info'];
 
     // Create a new PHPMailer instance
-    $mail = new PHPMailer(true);
-    $mail ->SMTPDebug = SMTP::DEBUG_SERVER;
 
     try {
+        $mail ->SMTPDebug = SMTP::DEBUG_SERVER;
         // SMTP settings for Gmail
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'nguyenhctracy@gmail.com'; // Your Gmail address
-        $mail->Password = '****'; // Your Gmail password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Password = 'xrgltptcbcnlnwkd'; // Your Gmail password
+        $mail->SMTPSecure = "ssl";
+        $mail->Port = 465;
 
         // Sender and recipient settings
         $mail->setFrom($email, $name); // Sender's email and name
-        $mail->addAddress('recipient_email@example.com', 'Recipient Name');
+        $mail->addAddress('nguyenhctracy@gmail.com', 'Tracy Nguyen');
 
         // Email subject and body
         $mail->isHTML(true);
