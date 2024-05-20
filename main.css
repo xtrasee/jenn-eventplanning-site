@@ -73,6 +73,7 @@ html, body{
 
     a{
         text-decoration: none;
+        color: black;
     }
 
     .logo{
@@ -149,7 +150,9 @@ html, body{
         margin-top: 2rem;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         text-align: center;
+        align-items: center;
         background-color: var(--pink-color);
         padding: 1rem 0;
         border-top: 1px solid black;
@@ -184,12 +187,17 @@ html, body{
     
     /* GALLERY */
 
+    .preview-container{
+        display: flex;
+        justify-content: center;
+    }
+
     .preview-gallery{
         padding: 1.25rem 3rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
         grid-gap: 20px;
-        width: auto;
+        width: 75%;
     }
 
     .img-card{
@@ -311,7 +319,7 @@ html, body{
 
     .about-content p{
         font-family: var(--main-font);
-        font-size: 0.60rem;
+        font-size: 0.75rem;
         letter-spacing: 0.05rem;
         margin-top: 0.75rem;
         width: 75%;
@@ -328,6 +336,7 @@ html, body{
         background-color: black;
         padding: 0rem 1rem;
         border-radius: 6px;
+        font-size: .75rem;
     }
 
     /* packages and pricing section */
@@ -365,7 +374,7 @@ html, body{
         width: 75%;
         margin-left: 12.5%;
         font-family: var(--main-font);
-        font-size: 0.6rem;
+        font-size: 0.75rem;
         text-align: center;
     }
 
@@ -421,17 +430,25 @@ html, body{
 
     /* swiper */
     .swiper-container {
-        --swiper-navigation-size: 2rem;
-        --swiper-navigation-top-offset: 925%;
-        --swiper-navigation-sides-offset: 0.75rem;
-        --swiper-navigation-color: var(--pink-color);
-        width: 100%;
+        width: 95%;
         height: 300px;
         margin: 20px auto;
+        position: relative;
     }
 
-    .navigation-container{
-        z-index: -3;
+    /* the new container */
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    /* fix the buttons positions */
+    .swiper-button-prev, .swiper-button-next {
+        --swiper-navigation-color: var(--pink-color);
+        --swiper-navigation-sides-offset: 3rem;
+        --swiper-navigation-size: 2.5rem;
+        --swiper-navigation-top-offset: 40%;
     }
     
     .swiper-slide-container {
@@ -515,4 +532,14 @@ html, body{
         margin-top: 2rem;
 
     }
+
+    .svg-container{
+        margin: auto;
+        max-width: 325px;
+    }
+
+    /* svg {
+        width: 95%;
+        height: 95%;
+    } */
 }

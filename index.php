@@ -37,8 +37,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPAuth = true;
         $mail->Username = 'nguyenhctracy@gmail.com'; // Your Gmail address
         $mail->Password = 'xrgltptcbcnlnwkd'; // Your Gmail password
-        $mail->SMTPSecure = "ssl";
-        $mail->Port = 465;
+        $mail->SMTPSecure = "tls";
+        $mail->Port = 587;
+        // $mail->SMTPSecure = "ssl";
+        // $mail->Port = 465;
 
         // Sender and recipient settings
         $mail->setFrom($email, $name); // Sender's email and name
@@ -66,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Send email
         $mail->send();
-        echo 'Message has been sent';
+        header("Location: sent.html");
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
