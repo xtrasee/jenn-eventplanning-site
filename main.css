@@ -190,14 +190,15 @@ html, body{
     .preview-container{
         display: flex;
         justify-content: center;
+        margin: auto;
+        width: 75%;
     }
 
     .preview-gallery{
-        padding: 1.25rem 3rem;
+        padding: 1.25rem 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
-        width: 75%;
     }
 
     .img-card{

@@ -1,12 +1,15 @@
 <?php
-
+// Include PHPMailer autoload file
+require 'vendor/autoload.php';
 // Import necessary classes
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
-// Include PHPMailer autoload file
-require 'vendor/autoload.php';
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 
 $mail = new PHPMailer(true);
 
@@ -27,17 +30,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $social_media = $_POST['social'];
     $more_info = $_POST['info'];
 
-    // Create a new PHPMailer instance
-
     try {
         $mail ->SMTPDebug = SMTP::DEBUG_SERVER;
         // SMTP settings for Gmail
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'nguyenhctracy@gmail.com'; // Your Gmail address
-        $mail->Password = 'xrgltptcbcnlnwkd'; // Your Gmail password
-        $mail->SMTPSecure = "tls";
+        $mail->Username = getenv('DB_USERNAME'); // Your Gmail address
+        $mail->Password = getenv('DB_PASSWORD'); // Your Gmail password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         // $mail->SMTPSecure = "ssl";
         // $mail->Port = 465;

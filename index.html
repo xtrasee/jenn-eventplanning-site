@@ -398,7 +398,7 @@
         <p class="logo" style="text-align: center;">*insert logo here*</p>
 
         <div class="form" id="contact-form">
-            <form method="post" action="index.php" id="contactForm">
+            <form action="/index.php" method="POST" id="contactForm">
                 <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" placeholder="Your full name here" class="input" required>
                 <label for="email">Email *</label>
@@ -456,7 +456,8 @@
                 <label for="info">I'd love to hear more!</label>
                 <textarea name="info" id="info" cols="20" rows="5" placeholder="Please include any other event details here!"></textarea>
                 <div class="form-btn">
-                    <button class="form-btn">Submit</button>
+                    <button type="submit" class="form-btn">Submit</button>
+                    <!-- <input type="submit"> -->
                 </div>
             </form>
         </div>
