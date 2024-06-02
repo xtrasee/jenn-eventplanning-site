@@ -73,7 +73,6 @@ html, body{
 
     a{
         text-decoration: none;
-        color: black;
     }
 
     .logo{
@@ -126,7 +125,12 @@ html, body{
         display: flex;
         padding-left: 0.5rem;
         position: fixed;
-    }    
+    }
+    
+    .contain-1{
+        width: 75%;
+        margin-left: 12.5%;
+    }
 
     .container-1 button, .btn{
         background-color: var(--btn-color);
@@ -144,15 +148,24 @@ html, body{
         font-size: 0.75rem;
         margin: 1.5rem 0rem;
     }
+
+    .hidden-img{
+        display: none;
+        height: 160px;
+        width: 130px;
+        background-color: pink;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        margin: 0.50rem;
+        border: 1px solid black;
+    }
     
     /* SECTION 1 */
     .container-1{
         margin-top: 2rem;
         display: flex;
         flex-direction: row;
-        justify-content: center;
         text-align: center;
-        align-items: center;
         background-color: var(--pink-color);
         padding: 1rem 0;
         border-top: 1px solid black;
@@ -187,18 +200,13 @@ html, body{
     
     /* GALLERY */
 
-    .preview-container{
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        width: 75%;
-    }
-
     .preview-gallery{
-        padding: 1.25rem 1rem;
+        padding: 1.25rem 3rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
         grid-gap: 20px;
+        width: auto;
+        border: 1px solid black;
     }
 
     .img-card{
@@ -320,7 +328,7 @@ html, body{
 
     .about-content p{
         font-family: var(--main-font);
-        font-size: 0.75rem;
+        font-size: 0.60rem;
         letter-spacing: 0.05rem;
         margin-top: 0.75rem;
         width: 75%;
@@ -337,7 +345,6 @@ html, body{
         background-color: black;
         padding: 0rem 1rem;
         border-radius: 6px;
-        font-size: .75rem;
     }
 
     /* packages and pricing section */
@@ -375,7 +382,7 @@ html, body{
         width: 75%;
         margin-left: 12.5%;
         font-family: var(--main-font);
-        font-size: 0.75rem;
+        font-size: 0.6rem;
         text-align: center;
     }
 
@@ -431,25 +438,17 @@ html, body{
 
     /* swiper */
     .swiper-container {
-        width: 95%;
+        --swiper-navigation-size: 2rem;
+        --swiper-navigation-top-offset: 925%;
+        --swiper-navigation-sides-offset: 0.75rem;
+        --swiper-navigation-color: var(--pink-color);
+        width: 100%;
         height: 300px;
         margin: 20px auto;
-        position: relative;
     }
 
-    /* the new container */
-    .swiper-container {
-        position: relative;
-        width: 100%;
-        padding: 0 40px;
-    }
-
-    /* fix the buttons positions */
-    .swiper-button-prev, .swiper-button-next {
-        --swiper-navigation-color: var(--pink-color);
-        --swiper-navigation-sides-offset: 3rem;
-        --swiper-navigation-size: 2.5rem;
-        --swiper-navigation-top-offset: 40%;
+    .navigation-container{
+        z-index: -3;
     }
     
     .swiper-slide-container {
@@ -533,14 +532,63 @@ html, body{
         margin-top: 2rem;
 
     }
+}
 
-    .svg-container{
-        margin: auto;
-        max-width: 325px;
+@media screen and (min-width: 768px){
+
+    .hidden-img{
+        display: block;
+        width: 300px;
+        height: 250px;
     }
 
-    /* svg {
-        width: 95%;
-        height: 95%;
-    } */
+    .landing{
+        display: flex;
+        margin: 4rem;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+
+    .landing h1{
+        font-size: 1.5rem;
+    }
+
+    .contain-1{
+        padding: 3rem;
+        margin-left: 0;
+    }
+
+    .main-img{
+        border-radius: 90%;
+        height: 275px;
+        width: 175px;
+        margin-left: 4.5rem;
+    }
+
+    .background{
+        background-color: var(--pink-color);
+        border: 1px solid black;
+        padding: 1.5rem;
+    }
+
+    .container-1{
+        justify-content: space-between;
+        width: 75%;
+        margin-left: 12.5%;
+        border: none;
+    }
+
+    .container-1-right-contents h2{
+        font-size: 2rem;
+    }
+
+    .container-1-right-contents p{
+        font-size: 1rem;
+    }
+
+    .preview-gallery{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+        width: 75%;
+        margin-left: 12.5%;
+    }
 }
