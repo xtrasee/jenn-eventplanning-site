@@ -591,4 +591,80 @@ html, body{
         width: 75%;
         margin-left: 12.5%;
     }
+
+    /* packages & pricing */
+    .pricing-h2{
+        font-size: 2.25rem;
+    }
+
+    .contain-2{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .cone{
+        border: 1px solid black;
+        border-radius: 45% 45% 0 0;
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .planning, .coordination{
+        width: 8rem;
+        padding:0rem;
+        border-bottom: none;
+        border-top: none;
+        margin-left: 4rem;
+    }
+
+    .planning{
+        margin-right: 0rem;
+    }
+
+    .planning-container{
+        margin-top: 0rem;
+        height: 10rem;
+    }
+
+    .contain-2 h3{
+        padding-top: 1.25rem;
+    }
+
+    .contact-header{
+        font-size: 7rem;
+    }
+    /* about */
+
+    .about-header{
+        display: flex;
+    }
+
+    .about-header h3{
+        align-items: center;
+        padding-top: 5rem;
+        width: 200px;
+        margin-left: 12.5%;
+        font-size: 3rem;
+    }
+
+    .profile-pic{
+        height: 17rem;
+        width: 20rem;
+    }
+
+    .about-content{
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    .about-content p{
+        font-size: 1rem;
+    }
+
+    .contact-btn button, .form-btn button{
+        padding: 0rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 45px;
+    }
 }
