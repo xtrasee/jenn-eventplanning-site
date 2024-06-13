@@ -74,6 +74,13 @@ html, body{
         text-decoration: none;
     }
 
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5rem 0rem;
+    }
+
     .logo{
         text-align: center;
     }
@@ -206,9 +213,14 @@ html, body{
         display: grid;
         grid-gap: 20px;
         grid-template-columns: 1fr 1fr;
-        width: 50%;
-        margin-left: 17%;
+        width: min(100%-2rem, 768px);
+        justify-items: center;
         margin-top: 2rem;
+    }
+
+    .container-3{
+        display: flex;
+        justify-content: center;
     }
 
     .img-card{
@@ -220,7 +232,7 @@ html, body{
     .gallery-btn, .final-btn{
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin: 1.5rem 0rem 1rem 0rem;
     }
 
     .gallery-btn button, .final-btn button{
@@ -241,7 +253,7 @@ html, body{
     .pricing-container{
         background-color: var(--pink-color);
         padding-bottom: 1.25rem;
-        margin-bottom: 2rem;
+        border-top: 2px solid black;
     }
 
     .pricing-h2{
@@ -260,8 +272,6 @@ html, body{
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
-        margin-top: 3rem;
-        height: auto;
     }
 
     .planning, .coordination{
@@ -306,15 +316,19 @@ html, body{
 
     /* contact img */
     .contact-us{
-        text-align: center;
-        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
         color: var(--main-background);
-        background-image: url("carriage.JPEG");
+        background-image: url("img/carriage.JPEG");
         margin-bottom: 1rem;
         text-shadow: -0.75px -0.75px 0 #000,  
                   0.75px -0.75px 0 #000,
                  -0.75px  0.75px 0 #000,
                   0.75px  0.75px 0 #000; /* Apply the black outline */
+        height: 250px;
+        border-top: 2px solid black;
     }
 
     /* ABOUT SECTION */
@@ -331,7 +345,7 @@ html, body{
 
     .about-content p{
         font-family: var(--main-font);
-        font-size: 0.60rem;
+        font-size: 0.75rem;
         letter-spacing: 0.05rem;
         margin-top: 0.75rem;
         width: 75%;
@@ -357,6 +371,13 @@ html, body{
         font-family: var(--mainheader-font);
         font-size: 2rem;
         letter-spacing:0.1rem
+    }
+
+    .curved{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     /* adjusting some curved headers */
     .sm{
@@ -447,10 +468,10 @@ html, body{
 
     /* swiper */
     .swiper-container {
-        --swiper-navigation-size: 2rem;
-        --swiper-navigation-top-offset: 925%;
+        /* --swiper-navigation-size: 2rem;
+        --swiper-navigation-top-offset: 500%;
         --swiper-navigation-sides-offset: 0.75rem;
-        --swiper-navigation-color: var(--pink-color);
+        --swiper-navigation-color: var(--pink-color); */
         width: 100%;
         height: 300px;
         margin: 20px auto;
@@ -458,6 +479,10 @@ html, body{
 
     .navigation-container{
         z-index: -3;
+        --swiper-navigation-size: 2rem;
+        --swiper-navigation-top-offset: 520%;
+        --swiper-navigation-sides-offset: 0.75rem;
+        --swiper-navigation-color: var(--pink-color);
     }
     
     .swiper-slide-container {
@@ -599,10 +624,9 @@ html, body{
         width: 75%;
         margin-left: 12.5%;
     }
-
     /* packages & pricing */
     .pricing-h2, .other-services h2{
-        font-size: 2.25rem;
+        font-size: 2.50rem;
     }
 
     .contain-2{
@@ -640,9 +664,6 @@ html, body{
         padding-top: 1.25rem;
     }
 
-    .contact-header{
-        font-size: 7rem;
-    }
     /* about */
 
     .about-header{
