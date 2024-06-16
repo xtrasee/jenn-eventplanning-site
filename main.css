@@ -74,6 +74,11 @@ html, body{
         text-decoration: none;
     }
 
+    .btn-contain{
+        display: flex;
+        justify-content: center;
+    }
+
     .btn-flex{
         display: flex;
     }
