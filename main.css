@@ -151,13 +151,13 @@ header, main{
 
     .container-1 button, .btn{
         background-color: var(--btn-color);
-        padding: 0.35rem 0.5rem;
-        border-radius: 10px;
+        padding: 0.20rem 0.3rem;
+        border-radius: 8px;
         cursor: pointer;
-        box-shadow: #422800 4px 3px 0px 0px;
+        box-shadow: #422800 3px 2px 0px 0px;
         border: none;
         font-family: var(--main-font);
-        margin-top: 0.75rem;
+        margin-top: 0.5rem;
     }
     
     .location{
@@ -170,26 +170,42 @@ header, main{
         padding-top: 0.25rem;
     }
 
-    .contain-1{
+    .landing {
         position: relative;
     }
-
+    
     .svg-container {
-        width: 275px;
-        height: 200px;
-        position: absolute;
+        position: relative;
     }
-
-    .star-1{
+    
+    .star-1, .star-2 {
         position: absolute;
-        padding-right: 40%;
-        transform: translate(-50%, -50%);
+        width: auto;
+        height: 1.75rem;
     }
-
-    .star-2{
-        position: absolute;
-        left: 100%;
-        top:-5%;
+    
+    .star-1 {
+        top: 70px; 
+        left: 100px;
+    }
+    
+    .star-2 {
+        bottom: 70px;
+        right: 60px;
+    }
+    
+    .contain-1 {
+        position: relative;
+        z-index: 2; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    h1 {
+        margin: 0.5rem 0; /* Adjust margin as needed */
     }
 
     .hidden-img{
@@ -208,6 +224,7 @@ header, main{
        position: relative;
     }
     .container-1{
+        position: relative;
         z-index: 2;
         margin-top: 2rem;
         display: flex;
@@ -217,22 +234,20 @@ header, main{
         background-color: var(--pink-color);
     }
 
-    .wave-top img,
-    .wave-bot img {
-        width: 100%; /* Ensure the wave image scales with the container */
-        height: auto; /* Maintain aspect ratio */
+    .wave-top,
+    .wave-bot{
+        position: absolute;
+        width: 100vw;
+        height: auto;
     }
 
     .wave-top{
-        /* fix later */
-        position: absolute;
-        top: -40%;
+        top: -38%;
         z-index: 1;
     }
 
     .wave-bot{
-        position: absolute;
-        bottom: -25%;
+        bottom: -35%;
     }
 
     .main-img, .profile-pic{
@@ -256,10 +271,16 @@ header, main{
         margin-top: 0.55em;
     }
 
-    .container-1-right-contents p, button{
+    .container-1-right-contents p{
         font-size: 0.60rem;
-        margin-top: 0.6rem;
+        width: 80%;
+        margin: auto;
+        padding-top: 0.75rem;
         z-index: 2;
+    }
+
+    .container-1-right-contents button{
+        font-size: .50rem;
     }
 
     .container-1 h2{
@@ -286,7 +307,6 @@ header, main{
     .img-card{
         height: 100px;
         width: 100px;
-        background-color: pink;
     }
 
     .gallery-btn, .final-btn{
@@ -311,9 +331,14 @@ header, main{
 
     /* PRICING SECTION */
     .pricing-container{
-        background-color: var(--pink-color);
         padding-bottom: 1.25rem;
         border-top: 1.75px solid black;
+        position: relative;
+        z-index: 1;
+    }
+
+    .background-contain{
+        background-color: var(--pink-color);
     }
 
     .pricing-h2{
@@ -372,16 +397,33 @@ header, main{
         background-color: black;
         padding: 0.25rem;
         border-radius: 10px;
+        margin-top: 0.75rem;
+    }
+
+    .wave-bot-2{
+        position: absolute;
+        z-index: 2;
+    }
+
+    .contain-test{
+        position:absolute;
+        bottom: 20px;
+        z-index: 3;
+        padding-top: 50px;
     }
 
     /* contact img */
     .contact-us{
+        position: absolute;
+        top: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 3rem;
         color: var(--main-background);
         background-image: url("img/carriage.JPEG");
+        background-size: cover;
+        width: 100vw;
         margin-bottom: 1rem;
         text-shadow: -0.75px -0.75px 0 #000,  
                   0.75px -0.75px 0 #000,
@@ -390,29 +432,28 @@ header, main{
         height: 200px;
     }
 
-    .wave-bot-2{
-        z-index: 3;
-    }
-
     /* ABOUT SECTION */
     .about{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .about-content{
+        position: absolute;
+        top: 21rem;
         background-color: var(--pink-color);
-        padding: 0.75rem 0rem;
+        padding: 0rem 0rem 0.75rem 0rem;
     }
 
     .about-content p{
         font-family: var(--main-font);
         font-size: 0.75rem;
         letter-spacing: 0.05rem;
-        margin-top: 0.75rem;
-        width: 75%;
-        margin-left: 12.5%;
+        width: 60%;
+        margin: auto;
+        padding-top: 0.5rem;
     }
 
     .about h3{
@@ -425,8 +466,8 @@ header, main{
     .contact-btn button, .form-btn button{
         color: white;
         background-color: black;
-        padding: 0rem 1rem;
-        border-radius: 6px;
+        padding: 0.15rem 1rem;
+        border-radius: 8px;
     }
 
     /* packages and pricing section */
