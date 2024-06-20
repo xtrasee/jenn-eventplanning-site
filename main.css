@@ -341,11 +341,11 @@ header, main{
         background-color: var(--pink-color);
     }
 
-    .pricing-h2{
+    .packages h2{
         text-align: center;
-        font-size: 1.15rem;
+        font-size: 1.5rem;
         letter-spacing: 0.15rem;
-        padding-top: 2rem;
+        margin: auto;
     }
 
     .pricing-container h3{
@@ -471,41 +471,84 @@ header, main{
     }
 
     /* packages and pricing section */
+    .packages{
+        text-align: center;
+        position: relative;
+    }
+
+    .svgs-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+    }
+
+    .curved{
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+
     .curved-letters{
         font-family: var(--mainheader-font);
         font-size: 2rem;
         letter-spacing:0.1rem
     }
 
-    .curved{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    /* adjusting some curved headers */
-    .sm{
-        font-size: 2.6rem;
+    .svg2-container{
+        position: relative;
+        top: -50px;
+        width: 25%;
+        margin: auto;
     }
 
-    .co{
-        font-size: 2.15rem;
+    .star-3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 5vh; /* Height relative to viewport height */
+        width: auto;
     }
 
-    .lo{
-        font-size: 1.8rem;
-    }
-
-    .de{
-        font-size: 2.23rem;
-    }
-
-    .la{
-        font-size: 1.95rem;
-    }
+    /* PARTIAL PLANNING */
 
     .partial-planning{
         background-color: var(--pink-color);
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .wave-three{
+        position: absolute;
+        bottom: -10%;
+        padding-top: 5rem;
+        z-index: 1;
+        margin-top: 2rem;
+    }
+
+    .svg3-container{
+        position: relative;
+        top: -30px;
+        width: 25%;
+        margin: auto;
+    }
+
+    .flower{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 3vh; /* Height relative to viewport height */
+        width: auto;
+        z-index: 3;
+    }
+
+    .wave-bot-3{
+        position: absolute;
+        bottom: -18%;
+
     }
 
     .packages p, .partial-planning p, .day-of-cord p, .other-services p{
@@ -531,8 +574,9 @@ header, main{
     }
 
     .btn{
-        padding: 0.25rem 1.5rem;
+        padding: 0.15rem 1.5rem;
         margin-bottom: 4rem;
+        z-index: 3;
     }
 
     .center-btn{
@@ -543,15 +587,36 @@ header, main{
         display: none;
     }
 
+    /* DAY OF COORD */
+    .day-of-cord{
+        margin-top: 12%;
+    }
+
+    .sm{
+        font-size: 1.81rem;
+    }
+
+    /* OTHER SERVICES */
+
+    .other-services{
+        position: relative;
+        background-color: var(--pink-color);
+        margin-top: 15%;
+    }
+
     .other-services h2{
         text-align: center;
         font-size: 1.15rem;
         color: var(--main-background);
         padding-top: 1rem;
+        z-index: 3;
+        position: relative;
     }
 
-    .other-services{
-        background-color: var(--pink-color);
+    .wave-top-4{
+        position: absolute;
+        top: -9%;
+        z-index: 3;
     }
 
     .events{
