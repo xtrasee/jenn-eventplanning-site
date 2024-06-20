@@ -577,6 +577,7 @@ header, main{
         padding: 0.15rem 1.5rem;
         margin-bottom: 4rem;
         z-index: 3;
+        font-size: 0.6rem;
     }
 
     .center-btn{
@@ -589,11 +590,18 @@ header, main{
 
     /* DAY OF COORD */
     .day-of-cord{
-        margin-top: 12%;
+        margin-top: 15%;
     }
 
     .sm{
         font-size: 1.81rem;
+    }
+
+    .svg3-container{
+        position: relative;
+        top: -30px;
+        width: 25%;
+        margin: auto;
     }
 
     /* OTHER SERVICES */
@@ -617,6 +625,13 @@ header, main{
         position: absolute;
         top: -9%;
         z-index: 3;
+    }
+
+    .svg4-container{
+        position: relative;
+        top: -15px;
+        width: 25%;
+        margin: auto;
     }
 
     .events{
@@ -649,7 +664,7 @@ header, main{
     .navigation-container{
         /* z-index: -3; */
         --swiper-navigation-size: 2rem;
-        --swiper-navigation-top-offset: 520%;
+        --swiper-navigation-top-offset: 810%;
         --swiper-navigation-sides-offset: 0.75rem;
         --swiper-navigation-color: var(--pink-color);
     }
@@ -726,8 +741,9 @@ header, main{
     }
 
     .menu h2{
-        font-size: 1.5rem;
-        margin-top: 1rem;
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+        letter-spacing: 0.25rem;
     }
 
     .final-btn{
@@ -788,7 +804,7 @@ header, main{
         margin-left: 12.5%;
     }
     /* packages & pricing */
-    .pricing-h2, .other-services h2{
+    .pricing-h2 h2, .other-services h2{
         font-size: 2.50rem;
     }
 
