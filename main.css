@@ -615,6 +615,10 @@ header, main{
         position: relative;
     }
 
+    .description2 p{
+        margin-top: 1rem;
+    }
+
     .wave-top-4{
         position: absolute;
         top: -9%;
@@ -638,6 +642,7 @@ header, main{
     }
 
     /* gallery */
+
     .gallery h2{
         font-size: 1.25rem;
         letter-spacing: 0.10rem;
@@ -646,20 +651,15 @@ header, main{
 
     /* swiper */
     .swiper-container {
-        /* --swiper-navigation-size: 2rem;
-        --swiper-navigation-top-offset: 500%;
-        --swiper-navigation-sides-offset: 0.75rem;
-        --swiper-navigation-color: var(--pink-color); */
         width: 100%;
         height: 300px;
         margin: 20px auto;
+        position: relative;
     }
 
     .navigation-container{
-        /* z-index: -3; */
         --swiper-navigation-size: 2rem;
-        --swiper-navigation-top-offset: 810%;
-        --swiper-navigation-sides-offset: 0.75rem;
+        --swiper-navigation-sides-offset: 4rem;
         --swiper-navigation-color: var(--pink-color);
     }
     
