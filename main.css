@@ -479,10 +479,8 @@ header, main{
     .svgs-container{
         display: flex;
         justify-content: center;
-        width: 100%;
         position: relative;
         z-index: 6;
-        border: 1px solid black;
     }
 
     .curved-letters{
