@@ -474,6 +474,7 @@ header, main{
     .packages{
         text-align: center;
         position: relative;
+        border: 1px solid black;
     }
 
     .svgs-container{
@@ -482,6 +483,8 @@ header, main{
         width: 100%;
         position: relative;
         z-index: 3;
+        border: 1px solid black;
+        margin-top: 3rem;
     }
 
     .curved{
