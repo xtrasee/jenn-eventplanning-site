@@ -105,26 +105,30 @@ header, main{
         z-index: 2;
         top: 0;
         left: 0;
-        background-color: #f5acc8fc;
+        background-color: var(--main-background);
         overflow-x: hidden;
         transition: 0.5s;
+        z-index: 8;
     }
 
     .overlay-content {
         position: relative;
-        top: 25%;
         width: 100%;
         text-align: center;
         margin-top: 2rem;
+        letter-spacing: 0.2rem;
       }
       
       .overlay a {
         padding: 8px;
         text-decoration: none;
-        font-size: 2rem;
         color: black;
         display: block;
         transition: 0.3s;
+      }
+
+      .overlay h2{
+        font-size: 1.25rem;
       }
       
       .overlay a:hover, .overlay a:focus {
@@ -136,6 +140,7 @@ header, main{
         top: 1.5rem;
         right: 2rem;
         font-size: 2.5rem;
+        z-index: 8;
       }
 
     .mobile-menu{
@@ -162,7 +167,7 @@ header, main{
     
     .location{
         font-family: 'Luckybones';
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         padding: 1.5rem 0rem 2rem 0rem;
     }
 
@@ -318,11 +323,19 @@ header, main{
     .gallery-btn button, .final-btn button{
         font-size: 1rem;
         transform: skew(-20deg);
-        padding: 1.25rem 2.5rem;
         background-color: var(--btn-color);
         box-shadow: #422800 4px 5px 0px 0px;
         border: none;
         border-radius: 75% 40% 75% 40%;
+    }
+
+    .gallery-btn button{
+        padding: 1.25rem 2.5rem;
+    }
+
+    .final-btn button{
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
     }
 
     .gallery-btn span {
@@ -449,11 +462,12 @@ header, main{
 
     .about-content p{
         font-family: var(--main-font);
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         letter-spacing: 0.05rem;
         width: 60%;
         margin: auto;
         padding-top: 0.5rem;
+        color: black;
     }
 
     .about h3{
@@ -617,6 +631,7 @@ header, main{
 
     .description2 p{
         margin-top: 1rem;
+        font-size: 0.75rem;
     }
 
     .wave-top-4{
@@ -651,15 +666,13 @@ header, main{
 
     /* swiper */
     .swiper-container {
-        width: 100%;
-        height: 300px;
         margin: 20px auto;
         position: relative;
     }
 
     .navigation-container{
         --swiper-navigation-size: 2rem;
-        --swiper-navigation-sides-offset: 4rem;
+        --swiper-navigation-sides-offset: 3rem;
         --swiper-navigation-color: var(--pink-color);
     }
     
@@ -672,7 +685,8 @@ header, main{
 
     .gallery-thumbs {
         position: relative;
-        height: 20%;
+        height: 75px;
+        width: auto;
         padding: 1rem;
     }
 
@@ -882,7 +896,7 @@ header, main{
         margin-left: 12.5%;
     }
 
-    .description2 p, .right h4, .services li, .desk-right p, .listing h4, .listing li{
+    .right h4, .services li, .desk-right p, .listing h4, .listing li{
         font-size: 1rem;
     }
 
