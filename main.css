@@ -75,6 +75,11 @@ header, main{
 
     a{
         text-decoration: none;
+        color: black;
+    }
+
+    a button{
+        color: inherit;
     }
 
     .btn-contain{
@@ -478,7 +483,7 @@ header, main{
     }
 
     .contact-btn button, .form-btn button{
-        color: white;
+        /* color: white; */
         background-color: black;
         padding: 0.15rem 1rem;
         border-radius: 8px;
