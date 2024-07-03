@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Day Bestie</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="/index.html">
+                        <div class="logo"><img src="img/logo.svg" alt="" height="140px" style="margin-bottom: 2rem;"></div>
+                    </a>
+                    <a href="/about.html"><h2>ABOUT ME</h2></a>
+                    <a href="/packages.html"><h2>PACKAGES & PRICING</h2></a>
+                    <a href="/gallery.html"><h2>GALLERY</h2></a>
+                    <a href="/contact.html"><h2>CONTACT US</h2></a>
+        
+                    <a href="/contact.html">
+                        <div class="final-btn">
+                            <button class="final-btn btn-flex">
+                                <span>Inquire Here<img src="/img/arrow.svg" alt="" width="18px"></span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <a href="/index.html">
+                <div class="logo"><img src="img/logo.svg" alt="" height="200px"></div>
+            </a>
+
+            <div class="gallery" id="gallery">
+                <h2>GALLERY</h2>
+                <!-- Slider main container -->
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-1.JPG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-2.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-3.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-4.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-5.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-1.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-8.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-5.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-6.JPG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-6.JPEG" alt=""></div></div>
+                    </div>
+                    <!-- Add navigation -->
+                    <div class="navigation-container">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+    
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-1.JPG" alt="" height="50px"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-2.JPEG" alt="" height="500px"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-3.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-4.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-5.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-1.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-8.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-5.JPEG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/gallery-6.JPG" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img class="swiper-slide-container" src="img/main-gallery-6.JPEG" alt=""></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var galleryTop = new Swiper('.gallery-top', {
+                                spaceBetween: 10,
+                                navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                                },
+                                initialSlide: 0
+                            });
+        
+                        var galleryThumbs = new Swiper('.gallery-thumbs', {
+                            spaceBetween: 10,
+                            centeredSlides: true,
+                            slidesPerView: 'auto',
+                            touchRatio: 0.2,
+                            slideToClickedSlide: false,
+                            initialSlide: 0
+                        });
+        
+                        galleryTop.controller.control = galleryThumbs;
+                        galleryThumbs.controller.control = galleryTop;
+                    });
+                </script>
+        <script src="script.js"></script>
+    </main>
+</body>

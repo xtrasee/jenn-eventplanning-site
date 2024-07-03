@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Day Bestie</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="/index.html">
+                        <div class="logo"><img src="img/logo.svg" alt="" height="140px" style="margin-bottom: 2rem;"></div>
+                    </a>
+                    <a href="/about.html"><h2>ABOUT ME</h2></a>
+                    <a href="/packages.html"><h2>PACKAGES & PRICING</h2></a>
+                    <a href="/gallery.html"><h2>GALLERY</h2></a>
+                    <a href="/contact.html"><h2>CONTACT US</h2></a>
+        
+                    <a href="/contact.html">
+                        <div class="final-btn">
+                            <button class="final-btn btn-flex">
+                                <span>Inquire Here<img src="/img/arrow.svg" alt="" width="18px"></span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+    </main>
+        <div class="contact-container">
+            <a href="/index.html">
+                <div class="logo"><img src="img/logo.svg" alt="" height="200px"></div>
+            </a>
+            
+            <div class="form" id="contact-form">
+                <form action="" id="contactForm">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name here" class="input" required>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="E.g. myemail@email.com" class="input" required>
+                    <label for="number">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="E.g. 555 123 4567" class="input" required>
+                    <label for="cb">Preferred Method of Communication</label>
+                    <div class="checkbox">
+                        <div style="margin-top: 0.5rem;">
+                            <input id="cb" type="checkbox">
+                            <p>Text</p>
+                        </div>
+                        <div>
+                            <input id="cb" type="checkbox">
+                            <p>Email</p>
+                        </div>
+                        <div>
+                            <input id="cb" type="checkbox">
+                            <p>Phone Call</p>
+                        </div>
+                    </div>
+                    <label for="date">Event Date *</label>
+                    <input type="date" name="date" id="event-date" class="input" required>
+                    <label for="cb">Is this date flexible</label>
+                    <div class="checkbox">
+                        <div style="margin-top: 0.5rem;">
+                            <input id="cb" type="checkbox">
+                            <p>Yes</p>
+                        </div>
+                        <div>
+                            <input id="cb" type="checkbox">
+                            <p>No</p>
+                        </div>
+                    </div>
+                    <label for="address">Address for Event (if Known)</label>
+                    <input type="text" id="address" name="address" placeholder="E.g. 123 Wed St. San Diego, CA 92111" class="input">
+                    <label for="type">What type of event are you planning? *</label>
+                    <select name="type" id="type">
+                        <option value="">Insert option</option>
+                        <option value="">Insert option</option>
+                        <option value="">Insert option</option>
+                    </select>
+                    <label for="guest-count">Est. Guest Count</label>
+                    <input type="number" name="count" id="count" placeholder="E.g. 100" class="input" required>
+                    <label for="budget">Est. Total Budget</label>
+                    <input type="number" name="count" id="count" placeholder="E.g. $1000" class="input" required>
+                    <label for="hear">How did you hear about us?</label>
+                    <select name="hear" id="hear">
+                        <option value="">Insert option</option>
+                        <option value="">Insert option</option>
+                        <option value="">Insert option</option>
+                    </select>
+                    <label for="social">Social Media Accounts (if you have it)!</label>
+                    <input type="text" name="social" id="social" placeholder="@" class="input">
+                    <label for="info">I'd love to hear more!</label>
+                    <textarea name="info" id="info" cols="20" rows="5" placeholder="Please include any other event details here!"></textarea>
+                    <div class="form-btn">
+                        <div class="form-btn btn-contain">
+                            <button class="btn-flex">Submit<img src="/img/white-arrow.png" alt="" width="14px" style="padding-left: 2px;"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
